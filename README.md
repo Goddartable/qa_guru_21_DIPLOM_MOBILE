@@ -36,11 +36,12 @@
 </p>
 
 ## :clipboard: Тестовые сценарии
-+ :white_check_mark: Проверка работы кнопки "Search"
-+ :white_check_mark: Проверка работы кнопки "Saved"
-+ :white_check_mark: Проверка работы кнопки "Edits"
-+ :white_check_mark: Проверка перехода из поиска в найденную статью
-+ :white_check_mark: Проверка вхождения в выдачу поиска искомого значения
+Android:
++ :white_check_mark: Проверка поиска "Appium"
++ :white_check_mark: Проверка ошибки открытия результатов поиска "Wikipedia"
++ :white_check_mark: Проверка нажатия кнопки "Меню"
+iOS
++ :white_check_mark: Проверка ввода "hello@browserstack.com"
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
 <kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/***)</kbd>
@@ -55,15 +56,17 @@
 ## :desktop_computer: Команды запуска тестов в терминале
 #### Команды для локального запуска:
 ```bash
-./gradlew clean taskWithTagWiki -Dhost=${DEVICE}
-```
->${DEVICE} заменяем на одно из: browserstackDevice, personalDevice, virtualDevice
+gradle clean local_test -Dhost=local
+
+gradle clean ios_bs_test -Dhost=ios
+gradle clean android_bs_test -Dhost=android``
+
 
 #### Команды для удаленного запуска:
 ```bash
-clean taskWithTagWiki -Dhost=${DEVICE}
+clean ${TASK} -Denv=${TASK}
 ```
->${DEVICE} заменяем на одно из: browserstackDevice, personalDevice, virtualDevice
+>${TASK} заменяем на одно из: android, ios, local
 
 ## <img width="5%" title="Allure" src="images/logo/allureReport.svg"> Интеграция с Allure report
 #### Диаграммы прохождения тестов:
@@ -99,34 +102,12 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 <kbd>![](images/results/JiraResult.jpg)</kbd>
 
 ## :cinema: Видео прохождения тестов
-#### :white_check_mark: Проверка работы кнопки "Search":
+#### :white_check_mark: Проверка поиска "Appium":
 <p align="center">
-  <img src="images/gif/VideoResult1.gif">
-</p>
-
-#### :white_check_mark: Проверка работы кнопки "Saved":
-<p align="center">
-  <img src="images/gif/VideoResult2.gif">
-</p>
-
-#### :white_check_mark: Проверка работы кнопки "Edits":
-<p align="center">
-  <img src="images/gif/VideoResult3.gif">
-</p>
-
-#### :white_check_mark: Проверка перехода из поиска в найденную статью:
-<p align="center">
-  <img src="images/gif/VideoResult4.gif">
-</p>
-
-#### :white_check_mark: Проверка вхождения в выдачу поиска искомого значения:
-<p align="center">
-  <img src="images/gif/VideoResult5.gif">
+  <img src="images/results/VideoResult1.gif">
 </p>
 
 ## <img width="5%" title="Appium" src="images/logo/appium.svg"> Интеграция с Appium
-#### Запуск автотестов на личном смартфоне при помощи Appium Server GUI:
-<kbd>![](images/results/AppiumVirtualDevice.jpg)</kbd>
 
 #### Запуск автотестов на виртуальном смартфоне при помощи Appium Inspector и Android Studio:
 <kbd>![](images/results/LocalServer.JPG)</kbd>
