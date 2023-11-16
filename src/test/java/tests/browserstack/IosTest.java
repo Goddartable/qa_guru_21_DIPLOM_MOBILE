@@ -1,5 +1,9 @@
 package tests.browserstack;
 
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -13,6 +17,9 @@ public class IosTest extends TestBase {
 
     @Test
     @Tag("ios")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка ввода \"hello@browserstack.com\"\"")
     void findHelloTextTest() {
         step("Input hello@browserstack.com", () -> {
             $(id("Text Button")).click();

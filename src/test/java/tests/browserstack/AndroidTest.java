@@ -1,6 +1,10 @@
 package tests.browserstack;
 
 
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -15,6 +19,9 @@ import static io.appium.java_client.AppiumBy.id;
 public class AndroidTest extends TestBase {
     @Test
     @Tag("android")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка поиска \"Appium\"")
     void successfulAppiumSearchTest() {
         step("Type search", () -> {
             $(accessibilityId("Search Wikipedia")).click();
@@ -27,6 +34,9 @@ public class AndroidTest extends TestBase {
 
     @Test
     @Tag("android")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка ошибки открытия результатов поиска \"Wikipedia\"")
     void unsuccessfulSearchTest() {
         step("Type search", () -> {
             $(accessibilityId("Search Wikipedia")).click();
@@ -43,6 +53,9 @@ public class AndroidTest extends TestBase {
 
     @Test
     @Tag("android")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка нажатия кнопки \"Меню\"")
     void findSettingsTest() {
         step("Click Menu button", () -> {
             $(id("org.wikipedia.alpha:id/menu_overflow_button")).click();

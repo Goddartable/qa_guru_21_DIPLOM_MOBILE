@@ -43,14 +43,14 @@
 + :white_check_mark: Проверка вхождения в выдачу поиска искомого значения
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
-<kbd>[![](images/screenshots/JenkinsResult.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/***)</kbd>
 
 #### Параметры сборки:
 | Параметры          | Значение                             |
 |:-------------------|:-------------------------------------|
 | DEVICE             | Способы запуска мобильных автотестов |
 
-<kbd>[![](images/screenshots/JenkinsStart.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/JenkinsStart.jpg)](https://jenkins.autotests.cloud/***)</kbd>
 
 ## :desktop_computer: Команды запуска тестов в терминале
 #### Команды для локального запуска:
@@ -67,7 +67,7 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 
 ## <img width="5%" title="Allure" src="images/logo/allureReport.svg"> Интеграция с Allure report
 #### Диаграммы прохождения тестов:
-<kbd>[![](images/screenshots/AllureReportScheme.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/AllureReportScheme.jpg)](https://jenkins.autotests.cloud/***)</kbd>
 
 #### Развернутый результат прохождения тестов:
 | Левая часть скриншота | Правая часть скриншота            |
@@ -78,11 +78,11 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 |                       | Исходники консоли браузера        |
 |                       | Финальный ролик с процессом теста |
 
-<kbd>[![](images/screenshots/AllureReportTestCases.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/AllureReportTestCases.jpg)](https://jenkins.autotests.cloud/***)</kbd>
 
 ## <img width="5%" title="Allure" src="images/logo/allureTestOps.svg"> Интеграция с Allure TestOps
 #### Диаграммы прохождения тестов:
-<kbd>![](images/screenshots/AllureTestopsScheme.jpg)</kbd>
+<kbd>![](images/results/AllureTestopsScheme.jpg)</kbd>
 
 #### Развернутый результат прохождения тестов:
 | Левая часть скриншота | Правая часть скриншота            |
@@ -93,10 +93,10 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 |                       | Исходники консоли браузера        |
 |                       | Финальный ролик с процессом теста |
 
-<kbd>![](images/screenshots/AllureTestOpsTestCases.jpg)</kbd>
+<kbd>![](images/results/AllureTestOpsTestCases.jpg)</kbd>
 
 ## <img width="5%" title="Jira" src="images/logo/jira.svg"> Интеграция с Jira
-<kbd>![](images/screenshots/JiraResult.jpg)</kbd>
+<kbd>![](images/results/JiraResult.jpg)</kbd>
 
 ## :cinema: Видео прохождения тестов
 #### :white_check_mark: Проверка работы кнопки "Search":
@@ -126,15 +126,15 @@ clean taskWithTagWiki -Dhost=${DEVICE}
 
 ## <img width="5%" title="Appium" src="images/logo/appium.svg"> Интеграция с Appium
 #### Запуск автотестов на личном смартфоне при помощи Appium Server GUI:
-<kbd>![](images/screenshots/AppiumVirtualDevice.jpg)</kbd>
+<kbd>![](images/results/AppiumVirtualDevice.jpg)</kbd>
 
 #### Запуск автотестов на виртуальном смартфоне при помощи Appium Inspector и Android Studio:
-<kbd>![](images/screenshots/AppiumInspector.jpg)</kbd>
+<kbd>![](images/results/LocalServer.JPG)</kbd>
 
 ## <img width="5%" title="Browserstack" src="images/logo/browserstack.svg"> Интеграция с Browserstack
 #### Детальная инфографика процесса:
-<kbd>![](images/screenshots/Browserstack.jpg)</kbd>
+<kbd>![](images/results/Browserstack.jpg)</kbd>
 
 ## <img width="5%" title="Telegram" src="images/logo/telegram.svg"> Информирование в Telegram
 #### Оповещение ведется при помощи Telegram bot API:
-<kbd>![](images/screenshots/TelegramResult.jpg)</kbd>
+<kbd>![](images/results/TelegramResult.jpg)</kbd>

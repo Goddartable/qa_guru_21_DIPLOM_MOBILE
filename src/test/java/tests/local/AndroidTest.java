@@ -1,5 +1,9 @@
 package tests.local;
 
+import io.qameta.allure.Owner;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
@@ -14,6 +18,9 @@ public class AndroidTest extends TestBase {
 
     @Test
     @Tag("local")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка поиска \"Wikipedia\"")
     void successfulSearchTest() {
         back();
         step("Type search", () -> {
@@ -27,6 +34,9 @@ public class AndroidTest extends TestBase {
 
     @Test
     @Tag("local")
+    @Owner("Goddartable")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Проверка корректного отображения страниц \"Onboarding screen\"")
     void wikiOnboardingCheckTest() {
         step("Check page #1", () ->
             $(id("org.wikipedia.alpha:id/primaryTextView"))
