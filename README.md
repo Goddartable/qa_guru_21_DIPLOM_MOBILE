@@ -1,7 +1,7 @@
 # Автоматизация тестирования мобильного приложения Wikipedia
 
 <p align="center">
-<a href="https://github.com/wikimedia/apps-android-wikipedia/releases"><img src="images/screenshots/Wiki.jpg" width="30%" alt="Wiki"/></a>
+<a href="https://github.com/wikimedia/apps-android-wikipedia/releases"><img src="images/screenshots/Main.jpg" width="30%" alt="Wiki"/></a>
 </p>
 
 ## Содержание:
