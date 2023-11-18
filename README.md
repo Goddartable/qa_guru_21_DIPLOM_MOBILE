@@ -44,14 +44,14 @@ iOS
 + :white_check_mark: Проверка ввода "hello@browserstack.com"
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
-<kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_MOBILE/)</kbd>
 
 #### Параметры сборки:
-| Параметры          | Значение                             |
-|:-------------------|:-------------------------------------|
-| DEVICE             | Способы запуска мобильных автотестов |
+| Параметры | Значение                             |
+|:----------|:-------------------------------------|
+| TASK      | Способы запуска мобильных автотестов |
 
-<kbd>[![](images/results/JenkinsStart.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/JenkinsStart.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_MOBILE/build?delay=0sec)</kbd>
 
 ## :desktop_computer: Команды запуска тестов в терминале
 #### Команды для локального запуска:
@@ -70,7 +70,7 @@ clean ${TASK} -Denv=${TASK}
 
 ## <img width="5%" title="Allure" src="images/logo/allureReport.svg"> Интеграция с Allure report
 #### Диаграммы прохождения тестов:
-<kbd>[![](images/results/AllureReportScheme.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/AllureReportScheme.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_MOBILE/14/allure/)</kbd>
 
 #### Развернутый результат прохождения тестов:
 | Левая часть скриншота | Правая часть скриншота            |
@@ -81,7 +81,7 @@ clean ${TASK} -Denv=${TASK}
 |                       | Исходники консоли браузера        |
 |                       | Финальный ролик с процессом теста |
 
-<kbd>[![](images/results/AllureReportTestCases.jpg)](https://jenkins.autotests.cloud/***)</kbd>
+<kbd>[![](images/results/AllureReportTestCases.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_MOBILE/14/allure/#suites)</kbd>
 
 ## <img width="5%" title="Allure" src="images/logo/allureTestOps.svg"> Интеграция с Allure TestOps
 #### Диаграммы прохождения тестов:
