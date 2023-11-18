@@ -36,12 +36,17 @@
 </p>
 
 ## :clipboard: Тестовые сценарии
-Android:
+#### Android:
 + :white_check_mark: Проверка поиска "Appium"
 + :white_check_mark: Проверка ошибки открытия результатов поиска "Wikipedia"
 + :white_check_mark: Проверка нажатия кнопки "Меню"
-iOS
+#### iOS
 + :white_check_mark: Проверка ввода "hello@browserstack.com"
+
+#### Local
++ :white_check_mark: Проверка поиска "Wikipedia
++ :white_check_mark: Проверка корректного отображения страниц "Onboarding screen"
+
 
 ## <img width="5%" src="images/logo/jenkins.svg"> Сборка в Jenkins
 <kbd>[![](images/results/JenkinsResult.jpg)](https://jenkins.autotests.cloud/job/qa_guru_21_DIPLOM_MOBILE/)</kbd>
