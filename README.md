@@ -65,11 +65,11 @@ gradle clean local_test -Dhost=local
 
 gradle clean ios_bs_test -Dhost=ios
 gradle clean android_bs_test -Dhost=android``
-
+```
 
 #### Команды для удаленного запуска:
 ```bash
-clean ${TASK} -Denv=${TASK}
+clean ${TASK} -Denv=${TASK}``
 ```
 >${TASK} заменяем на одно из: android, ios, local
 
